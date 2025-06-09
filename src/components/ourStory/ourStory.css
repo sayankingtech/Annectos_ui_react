@@ -23,3 +23,9 @@
   background-color: #000000; /* Tailwind's blue-600 */
   /* transition: all 0.3s ease-out; */
 }
+
+.our-st-btn button:hover {
+  color: #e7e7e7;
+  background-color: #272727;
+  cursor: pointer;
+}

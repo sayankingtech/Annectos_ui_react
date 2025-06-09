@@ -57,9 +57,12 @@ const ourStory: React.FC = () => {
               </p>
             </div>
           </div>
-          <div>
-            <div className='ms-5'>
+          <div className='p-5'>
+            <div className='order w-full'>
               <img src={aboutImg} alt="" />
+            </div>
+            <div className='our-st-btn mt-6 text-center w-full'>
+              <button className='border w-[240px] h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
             </div>
           </div>
         </div>
