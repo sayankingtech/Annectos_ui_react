@@ -1,8 +1,9 @@
 import React from 'react'
-import Nav from '../components/Nav'
-import Banner from '../components/banner'
-import OurStory from '../components/ourStory/ourStory'
-import OurStory2 from '../components/ourStory2/ourStory2'
+import Nav from '../components/Nav/Nav'
+import Banner from '../components/Banner/Banner'
+import OurStory from '../components/OurStory/OurStory'
+import OurStory2 from '../components/OurStory2/OurStory2'
+import ChannelSolution from '../components/Channel-solution/ChannelSolution'
 
 const Home: React.FC = () => {
     return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
                 <Banner />
                 <OurStory />
                 <OurStory2 />
+                <ChannelSolution />
             </div>
         </>
     )

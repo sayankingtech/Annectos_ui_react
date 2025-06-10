@@ -1,0 +1,10 @@
+.read_more_btn button {
+  background-color: #296489;
+  color: white;
+}
+
+.read_more_btn button:hover {
+  color: #296489;
+  background-color: white;
+  cursor: pointer;
+}

@@ -3,7 +3,7 @@ import './ourStory.css'
 import { BiCheckDouble } from "react-icons/bi";
 import aboutImg from '../../assets/about.jpg'
 
-const ourStory: React.FC = () => {
+const OurStory: React.FC = () => {
   return (
     <>
       <div className='w-[85%] mx-auto pt-2'>
@@ -71,4 +71,4 @@ const ourStory: React.FC = () => {
   )
 }
 
-export default ourStory;
+export default OurStory;

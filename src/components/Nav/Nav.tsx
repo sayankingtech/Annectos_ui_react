@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import logo1 from "../assets/logo (1).png"
+import './Nav.css'
+
+import logo1 from "../../assets/logo (1).png"
 
 const Nav: React.FC = () => {
     const [location, setLocation] = useState('home')

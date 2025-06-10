@@ -1,7 +1,9 @@
 import React from 'react'
 
-import banner1 from "../assets/banner/Banner.jpg"
-import banner2 from "../assets/banner/C1.png"
+import './Banner.css'
+
+import banner1 from "../../assets/banner/Banner.jpg"
+import banner2 from "../../assets/banner/C1.png"
 // import banner3 from "../assets/banner/C2.png"
 // import banner4 from "../assets/banner/Creativeswag.in Banner 6.2.png"
 
@@ -14,12 +16,10 @@ import 'swiper/css/pagination';
 // @ts-ignore
 import 'swiper/css/navigation';
 
-import '../index.css';
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-const banner: React.FC = () => {
+const Banner: React.FC = () => {
     return (
         <>
          <div className=''>
@@ -73,4 +73,4 @@ const banner: React.FC = () => {
     )
 }
 
-export default banner
+export default Banner;
