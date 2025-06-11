@@ -4,6 +4,9 @@ import Banner from '../components/Banner/Banner'
 import OurStory from '../components/OurStory/OurStory'
 import OurStory2 from '../components/OurStory2/OurStory2'
 import ChannelSolution from '../components/Channel-solution/ChannelSolution'
+import EmployeeSolution from '../components/Employee-solution/EmployeeSolution'
+import RewardSolution from '../components/Reward-Solution/RewardSolution'
+import CaseStudies from '../components/Case-Studies/CaseStudies'
 
 const Home: React.FC = () => {
     return (
@@ -14,6 +17,9 @@ const Home: React.FC = () => {
                 <OurStory />
                 <OurStory2 />
                 <ChannelSolution />
+                <EmployeeSolution />
+                <RewardSolution />
+                <CaseStudies />
             </div>
         </>
     )

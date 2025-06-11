@@ -6,5 +6,6 @@
 .read_more_btn button:hover {
   color: #296489;
   background-color: white;
+  transition: 0.4s;
   cursor: pointer;
 }
