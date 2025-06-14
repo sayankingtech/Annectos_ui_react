@@ -7,6 +7,7 @@ import ChannelSolution from '../components/Channel-solution/ChannelSolution'
 import EmployeeSolution from '../components/Employee-solution/EmployeeSolution'
 import RewardSolution from '../components/Reward-Solution/RewardSolution'
 import CaseStudies from '../components/Case-Studies/CaseStudies'
+import OurClients from '../components/Our-Clients/OurClients'
 
 const Home: React.FC = () => {
     return (
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
                 <EmployeeSolution />
                 <RewardSolution />
                 <CaseStudies />
+                <OurClients />
             </div>
         </>
     )

@@ -16,8 +16,8 @@ import image12 from '../../assets/tesimonials/12.png'
 import image13 from '../../assets/tesimonials/13.png'
 import image14 from '../../assets/tesimonials/14.jpg'
 import image15 from '../../assets/tesimonials/15.jpg'
-import image16 from '../../assets/tesimonials/16.jpg'
-import image17 from '../../assets/tesimonials/17.jpg'
+// import image16 from '../../assets/tesimonials/16.jpg'
+// import image17 from '../../assets/tesimonials/17.jpg'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -25,8 +25,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 // @ts-ignore
 import 'swiper/css/scrollbar';
-// @ts-ignore
-import 'swiper/css/navigation';
 // @ts-ignore
 import { Pagination } from 'swiper/modules';
 
@@ -60,8 +58,6 @@ const CaseStudies: React.FC = () => {
                     spaceBetween={-40}
                     slidesPerView={1}
                     centeredSlides={false}
-                    // slidesPerGroupSkip={1}
-                    // grabCursor={true}
                     loop={true}
                     keyboard={{
                         enabled: true,
@@ -96,17 +92,16 @@ const CaseStudies: React.FC = () => {
                             slidesPerGroup: 1,
                         }
                     }}
-                    // navigation={true}
                     pagination={{
                         clickable: true,
                     }}
                     modules={[Keyboard, Autoplay, Pagination]}
-                    className="mySwiper offerBanner">
+                    className="mySwiper custom-swiper offerBanner">
                     {
                         swiperData.map((data, index) => {
                             return (
                                 <SwiperSlide key={index} className=''>
-                                    <div className="relative group mt-5 h-[250px] w-[490px] mx-auto shadow-[0_1px_10px_rgba(0,0,0,0.15)] overflow-hidden">
+                                    <div className="relative mb-20 group mt-5 h-[250px] w-[490px] mx-auto shadow-[0_1px_10px_rgba(0,0,0,0.15)] overflow-hidden">
                                         <div className="absolute m-2 inset-0 flex items-center justify-center z-10 transition-colors duration-300 group-hover:text-amber-50">
                                             <p className="text-2xl text-center font-bold">
                                                 {data.para}
@@ -115,28 +110,12 @@ const CaseStudies: React.FC = () => {
                                         <img
                                             src={data.image}
                                             alt="Overlay Image"
-                                            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 z-0 transition-opacity duration-300"
-                                        />
+                                            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 z-0 transition-opacity duration-300"/>
                                     </div>
                                 </SwiperSlide>
                             )
                         })
                     }
-
-                    {/* <SwiperSlide className=''>
-                        <div className="relative group h-[250px] w-[490px] mx-auto shadow-[0_1px_10px_rgba(0,0,0,0.15)] overflow-hidden">
-                            <div className="absolute m-2 inset-0 flex items-center justify-center z-10 transition-colors duration-300 group-hover:text-amber-50">
-                                <p className="text-2xl text-center">
-                                    Hover over this text to see the image overlay.
-                                </p>
-                            </div>
-                            <img
-                                src={image1}
-                                alt="Overlay Image"
-                                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 z-0 transition-opacity duration-300"
-                            />
-                        </div>
-                    </SwiperSlide> */}
                 </Swiper>
             </div>
         </>
