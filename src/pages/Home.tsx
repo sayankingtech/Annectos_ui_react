@@ -8,6 +8,8 @@ import EmployeeSolution from '../components/Employee-solution/EmployeeSolution'
 import RewardSolution from '../components/Reward-Solution/RewardSolution'
 import CaseStudies from '../components/Case-Studies/CaseStudies'
 import OurClients from '../components/Our-Clients/OurClients'
+import ContactUs from '../components/Contact-us/ContactUs'
+import Footer from '../components/Footer/Footer'
 
 const Home: React.FC = () => {
     return (
@@ -22,6 +24,8 @@ const Home: React.FC = () => {
                 <RewardSolution />
                 <CaseStudies />
                 <OurClients />
+                <ContactUs />
+                <Footer />
             </div>
         </>
     )

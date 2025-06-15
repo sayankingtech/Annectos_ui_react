@@ -29,7 +29,7 @@ const OurClients: React.FC = () => {
         { image: logo5 }
     ];
     return (
-        <div className='mt-5 pt-1 h-[350px] ourClient bg-gradient-to-t from-[#1E5077] via-amber-50 to-[#1E5077]'>
+        <div className='mt-5 pt-1 h-[380px] ourClient bg-gradient-to-t from-[#1E5077] via-amber-50 to-[#1E5077]'>
             <div className='w-[85%] mx-auto pt-6 font-semibold text-amber-50'>
                 <div className='our-Cl text-xl'>
                     <h1 className=''>OUR CLIENTS</h1>
@@ -78,7 +78,7 @@ const OurClients: React.FC = () => {
                             return (
                                 <>
                                     <SwiperSlide key={index} className=''>
-                                        <div className="flex justify-around items-center mt-7 h-[100px]">
+                                        <div className="flex justify-around items-center mt-10 h-[100px]">
                                             <img
                                                 src={data.image}
                                                 alt="Overlay Image"
@@ -90,7 +90,7 @@ const OurClients: React.FC = () => {
                         })
                     }
                 </Swiper>
-                <div className='text-black mt-8 text-[13px]'>
+                <div className='text-black mt-10 text-[13px]'>
                     <h5>Disclaimer: All logos are the property of their respective owners.</h5>
                 </div>
                 <div className='flex justify-center'>
