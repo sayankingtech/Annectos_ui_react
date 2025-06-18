@@ -97,7 +97,7 @@ const CaseStudies: React.FC = () => {
                     }}
                     modules={[Keyboard, Autoplay, Pagination]}
                     className="mySwiper custom-swiper offerBanner">
-                    {
+                    {   
                         swiperData.map((data, index) => {
                             return (
                                 <SwiperSlide key={index} className=''>
