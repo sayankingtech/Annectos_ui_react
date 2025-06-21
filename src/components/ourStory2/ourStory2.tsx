@@ -9,7 +9,7 @@ import { CiFaceSmile } from "react-icons/ci";
 const OurStory2: React.FC = () => {
     return (
         <>
-            <div className='grid grid-cols-4 w-[85%] mx-auto gap-6 mt-10 mb-10'>
+            <div className='grid lg:grid-cols-4 w-[85%] mx-auto gap-6 mt-10 mb-10'>
                 <div className=' p-6 shadow-[0_1px_20px_rgba(0,0,0,0.25)]'>
                     <div className='flex items-center'>
                         <span className='text-3xl'><TfiHeadphoneAlt /></span>

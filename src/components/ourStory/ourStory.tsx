@@ -10,7 +10,7 @@ const OurStory: React.FC = () => {
         <div className='ourStory text-xl'>
           <h1 className=''>OUR STORY</h1>
         </div>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-2'>
           <div>
             <div>
               <div className='flex items-end text-lg font-bold'>
@@ -19,7 +19,7 @@ const OurStory: React.FC = () => {
                 </span>
                 OUR JOURNEY
               </div>
-              <p className='mb-2 me-5 text-justify text-[15px]'>
+              <p className='mb-2 lg:me-5 text-justify text-[15px]'>
                 Founded in 2012, annectoś specialises in ideating, designing, and deploying channel marketing strategies spanning the spectrum of business to trade (B2T) activities. With key focus on ROI, our customised and specialised operations include trade marketing, retailer enrolment and network expansion through channel and influencer engagement . Our good Karma is to guarantee last-mile brand profitability for you channel-intensive product. Making your channel partners’ businesses profitable and rewarding is our mission.
               </p>
             </div>
@@ -30,7 +30,7 @@ const OurStory: React.FC = () => {
                 </span>
                 OUR AIM
               </div>
-              <p className='mb-2 me-5 text-justify text-[15px]'>
+              <p className='mb-2 lg:me-5 text-justify text-[15px]'>
                 We ascertain that your brand creates an indelible impression on retailers. They are mission-critical for any brand, in any market because they face customers. Our best-in-class, business-transforming strategies make brands lucrative even in chancy markets.
               </p>
             </div>
@@ -41,7 +41,7 @@ const OurStory: React.FC = () => {
                 </span>
                 PERFORMANCE MEASURED
               </div>
-              <p className='mb-2 me-5 text-justify text-[15px]'>
+              <p className='mb-2 lg:me-5 text-justify text-[15px]'>
                 annectoś acts as an extended arm of your sales & marketing function. We internalise your exact needs, customise and deploy programs with key focus on ROI.
               </p>
             </div>
@@ -52,17 +52,17 @@ const OurStory: React.FC = () => {
                 </span>
                 PARTNERSHIP
               </div>
-              <p className='mb-2 me-5 text-justify text-[15px]'>
+              <p className='mb-2 lg:me-e text-justify text-[15px]'>
                 At annectoś, what is done is measured and benchmarked. We constantly monitor our programs to determine that they deliver tangible outcomes.
               </p>
             </div>
           </div>
-          <div className='p-5'>
+          <div className='lg:p-5'>
             <div className='order w-full'>
               <img src={aboutImg} alt="" />
             </div>
-            <div className='our-st-btn mt-6 text-center w-full'>
-              <button className='border w-[240px] h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
+            <div className='our-st-btn mt-3 lg:mt-6 text-center w-full'>
+              <button className='border w-[220px] lg:w-[240px] h-[30px] lg:h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
             </div>
           </div>
         </div>
