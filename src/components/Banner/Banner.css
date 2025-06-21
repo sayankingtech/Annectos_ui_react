@@ -3,6 +3,7 @@
     opacity: 0;
     transform: translateY(-30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -14,6 +15,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -26,4 +28,30 @@
 
 .fade-up {
   animation: fadeUp 0.8s ease-out forwards;
+}
+
+
+.custom-swiper-banner .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: rgb(177, 177, 177);
+  opacity: 1;
+  margin: 0 3px;
+  transition: background-color 0.3s ease;
+}
+
+/* Active bullet */
+.custom-swiper-banner .swiper-pagination-bullet-active {
+  background-color: #00d9ff;
+}
+
+/* Position pagination over slide */
+.custom-swiper-banner .swiper-pagination {
+  position: absolute;
+  bottom: 16px;
+  transform: translateX(150%);
+  display: flex;
+  justify-content: center;
+  z-index: 10;
 }

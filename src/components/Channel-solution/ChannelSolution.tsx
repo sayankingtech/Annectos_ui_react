@@ -21,7 +21,7 @@ const ChannelSolution: React.FC = () => {
                         annectoś offers end-to-end <strong> Channel Trade Marketing Solutions</strong> pan India. We have among our esteemed clients renowned brands across Automobile, FMCG, and Infrastructure verticals (to name a few). annectoś in-house tech development team creates and deploys platforms for operations and database management with tailored flexibility. Our passionate and energetic teams are customer and result oriented. Our processes are robust and delivery of sterling quality.
                     </p>
                 </div>
-                <div className='grid grid-cols-5 gap-8 pt-6 w-[95%] mx-auto'>
+                <div className='grid md:grid-cols-3 lg:grid-cols-5 gap-8 pt-6 w-[95%] mx-auto'>
                     <div className='channel-SL-2 text-center p-3 bg-amber-50'>
                         <img className='h-[60px] w-[60px] mx-auto mt-5' src={imageIcon1} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Channel Partner Engagement</h3>

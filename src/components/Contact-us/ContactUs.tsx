@@ -13,7 +13,7 @@ const ContactUs: React.FC = () => {
                     <h1 className=''>CONTACT US</h1>
                 </div>
             </div>
-            <div className='grid grid-cols-2 m-3'>
+            <div className='grid lg:grid-cols-2 m-3'>
                 <div style={{ width: '100%', height: '350px' }}>
                     <iframe
                         title="Google Map"
@@ -27,28 +27,28 @@ const ContactUs: React.FC = () => {
                     ></iframe>
                 </div>
                 <div className=''>
-                    <div className='grid grid-cols-3 text-[13px] ms-3'>
-                        <div className='flex'>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 text-[13px] ms-3'>
+                        <div className='flex mt-2 lg:mt-0'>
                             <span className='text-[30px] me-3'><SlLocationPin /></span>
-                            <p>annectoś Loyalty Solutions,<br /> 3rd floor, Astitva Building, 11,<br /> Railway
+                            <p className='text-[14px]'>annectoś Loyalty Solutions,<br /> 3rd floor, Astitva Building, 11,<br /> Railway
                                 Parallel Road, Nehru Nagar,<br /> Bengaluru, Karnataka 560020</p>
                         </div>
-                        <div className='flex'>
+                        <div className='flex mt-2 lg:mt-0'>
                             <span className='text-[30px] ms-2 me-2'><BsEnvelope /></span>
-                            <p>customerfirst@annectos.in <br /> info@annectos.in</p>
+                            <p className='text-[14px]'>customerfirst@annectos.in <br /> info@annectos.in</p>
                         </div>
-                        <div className='flex'>
+                        <div className='flex mt-2 lg:mt-0'>
                             <span className='text-[30px] ms-2 me-2'><CiMobile2 /></span>
-                            <p>+91 9686202046 / 9972334590</p>
+                            <p className='text-[14px]'>+91 9686202046 / 9972334590</p>
                         </div>
                     </div>
-                    <div className='text-[15px] ms-3'>
-                        <div className='grid grid-cols-2 mt-4 gap-5'>
-                            <input className='border border-[#ccc] h-[30px] p-1 focus:outline-sky-500' type="text" placeholder='Your Name' />
-                            <input className='border border-[#ccc] h-[30px] p-1 focus:outline-sky-500' type="email" placeholder='Your Email' />
+                    <div className='text-[15px] lg:ms-3'>
+                        <div className='grid md:grid-cols-2 mt-4 gap-3 lg:gap-5'>
+                            <input className='border border-[#ccc] h-[40px] lg:h-[30px] p-1 focus:outline-sky-500' type="text" placeholder='Your Name' />
+                            <input className='border border-[#ccc] h-[40px] lg:h-[30px] p-1 focus:outline-sky-500' type="email" placeholder='Your Email' />
                         </div>
-                        <input className='border border-[#ccc] h-[30px] mt-4 p-1 w-full focus:outline-sky-500' type="text" placeholder='Subject' />
-                        <textarea className='fixed-textarea mt-4 focus:outline-sky-500' name="" id="" placeholder='Message'></textarea>
+                        <input className='border border-[#ccc] h-[40px] lg:h-[30px] mt-3 lg:mt-4 p-1 w-full focus:outline-sky-500' type="text" placeholder='Subject' />
+                        <textarea className='fixed-textarea mt-3 lg:mt-4 focus:outline-sky-500 text-[16px]' name="" id="" placeholder='Message'></textarea>
                     </div>
                     <div className='send_msg_btn ms-3 flex justify-center'>
                         <button className='rounded-[15px] w-[200px] p-1 mt-2 text-md'>Send Message</button>

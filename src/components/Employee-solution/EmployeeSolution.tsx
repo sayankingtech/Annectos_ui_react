@@ -9,7 +9,7 @@ import ReadMoreBtn from '../Read_more_Btn/ReadMoreBtn'
 const EmployeeSolution: React.FC = () => {
     return (
         <>
-            <div className='w-[85%] mx-auto pt-2'>
+            <div className='w-[85%] mx-auto pt-6 lg:pt-2'>
                 <div className='employee_SL text-xl'>
                     <h1 className=''>EMPLOYEE ENGAGEMENT SOLUTIONS</h1>
                 </div>
@@ -18,7 +18,7 @@ const EmployeeSolution: React.FC = () => {
                         The current workplace is more dynamic than ever before. Diversity of the human resource makes organisations vulnerable to slipping bottomlines. The truth about motivation is unfathomable. But what is clear to us (after doing business for almost a decade) is… different folks; different strokes!! ‘Personalisation’ is key to rewards & recognition. Our offerings for <strong> employee engagement </strong> are a cut above competition. Contact us for attractive, novel, and impactful employee engagement solutions.
                     </p>
                 </div>
-                <div className='grid grid-cols-2 gap-8 pt-6 mx-auto'>
+                <div className='grid md:grid-cols-2 gap-8 pt-6 mx-auto'>
                     <div className='employee_SL_2 channel-SL-2 text-center p-8 bg-amber-50'>
                         <img className='h-[60px] w-[60px] mx-auto' src={programManagement} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Program Management</h3>

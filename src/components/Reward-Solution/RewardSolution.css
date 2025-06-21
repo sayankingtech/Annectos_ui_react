@@ -23,3 +23,18 @@
   /* Tailwind's blue-600 */
   /* transition: all 0.3s ease-out; */
 }
+
+
+@media (min-width: 320px) {
+  .reward-sl h1::after {
+    top: 40px;
+    left: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reward-sl h1::after {
+    top: 15px;
+    left: 350px;
+  }
+}

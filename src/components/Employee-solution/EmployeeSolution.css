@@ -30,3 +30,18 @@
   transition: 0.4s;
   cursor: pointer;
 }
+
+
+@media (min-width: 320px) {
+  .employee_SL h1::after {
+    top: 40px;
+    left: 130px;
+  }
+}
+
+@media (min-width: 768px) {
+  .employee_SL h1::after {
+    top: 15px;
+    left: 350px;
+  }
+}

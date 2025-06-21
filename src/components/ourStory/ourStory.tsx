@@ -61,8 +61,8 @@ const OurStory: React.FC = () => {
             <div className='order w-full'>
               <img src={aboutImg} alt="" />
             </div>
-            <div className='our-st-btn mt-3 lg:mt-6 text-center w-full'>
-              <button className='border w-[220px] lg:w-[240px] h-[30px] lg:h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
+            <div className='our-st-btn mt-3 md:mt-4 lg:mt-6 text-center w-full'>
+              <button className='border w-[220px] lg:w-[240px] h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
             </div>
           </div>
         </div>

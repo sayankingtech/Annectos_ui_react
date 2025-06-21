@@ -8,27 +8,18 @@
 
 .case-St h1 {
   position: relative;
-  /* cursor: pointer; */
-  /* padding-bottom: 4px; */
 }
 
 .case-St h1::after {
   content: "";
   position: absolute;
   top: 16px;
-  left: 150px;
+  left: 50px;
   width: 150px;
   height: 1px;
   background-color: #000000;
-  /* Tailwind's blue-600 */
-  /* transition: all 0.3s ease-out; */
 }
 
-
-
-.custom-swiper .swiper-pagination {
-  padding-top: 50px;
-}
 
 .custom-swiper .swiper-pagination-bullet {
   padding: 5px;
@@ -40,4 +31,22 @@
 .custom-swiper .swiper-pagination-bullet-active {
   background-color: #000000;
   opacity: 2;
+}
+
+
+
+@media (min-width: 320px) {
+  .case-St h1::after {
+    left: 150px;
+    top: 12px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .case-St h1::after {
+    top: 14px;
+    left: 150px;
+  }
+
 }

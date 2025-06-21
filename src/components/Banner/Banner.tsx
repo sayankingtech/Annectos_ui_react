@@ -47,12 +47,12 @@ const Banner: React.FC = () => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className={"mySwiper"}>
+                    className={"mySwiper custom-swiper-banner"}>
                     {
                         swiperData.map((data, index) => {
                             return (
                                 <SwiperSlide key={index}>
-                                    <div className="relative h-[600px]">
+                                    <div className="relative h-[700px] lg:h-[600px]">
                                         <img
                                             className="w-full h-full object-cover z-[-10]"
                                             src={data.banner}

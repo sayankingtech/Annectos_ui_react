@@ -16,10 +16,10 @@ const RewardSolution: React.FC = () => {
                     <div className='employee_SL_2 channel-SL-2 text-center p-4 bg-amber-50'>
                         <img className='h-[60px] w-[60px] mt-4 mx-auto' src={LoyalityRewards} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Loyalty Rewards</h3>
-                        <p className='text-[14px] mt-5 ms-15 me-15'>Be it for employees or channel partners, loyalty rewards are crucial. Prompt delivery of rewards is the proof of the pudding. <br />
+                        <p className='text-[14px] mt-5 lg:ms-15 lg:me-15'>Be it for employees or channel partners, loyalty rewards are crucial. Prompt delivery of rewards is the proof of the pudding. <br />
                             We make a strong last impression! annectoś ensures that you have access to an exhaustive, customised, loyalty rewards gallery.
                         </p>
-                        <a className='text-[15px] ' href="#">Creative Swag.in</a>
+                        <a className='lg:text-[15px]' href="#">Creative Swag.in</a>
                         <ReadMoreBtn />
                     </div>
                 </div>

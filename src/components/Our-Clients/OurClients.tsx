@@ -50,16 +50,8 @@ const OurClients: React.FC = () => {
                             slidesPerView: 2,
                             slidesPerGroup: 1,
                         },
-                        480: {
-                            slidesPerView: 2,
-                            slidesPerGroup: 1,
-                        },
-                        640: {
-                            slidesPerView: 2,
-                            slidesPerGroup: 1,
-                        },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: 4,
                             slidesPerGroup: 1,
                         },
                         1024: {
@@ -94,7 +86,7 @@ const OurClients: React.FC = () => {
                     <h5>Disclaimer: All logos are the property of their respective owners.</h5>
                 </div>
                 <div className='flex justify-center'>
-                    <button className='p-3 mt-5 tracking-wide bg-white rounded-[5px] text-black w-[150px] cursor-pointer'>Learn More</button>
+                    <button className='p-2 lg:p-3 mt-5 tracking-wide bg-white rounded-[5px] text-black w-[150px] cursor-pointer'>Learn More</button>
                 </div>
             </div>
         </div>

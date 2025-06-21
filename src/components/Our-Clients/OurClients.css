@@ -23,3 +23,21 @@
   /* Tailwind's blue-600 */
   /* transition: all 0.3s ease-out; */
 }
+
+
+
+@media (min-width: 320px) {
+  .our-Cl h1::after {
+    left: 150px;
+    top: 12px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .our-Cl h1::after {
+    top: 14px;
+    left: 150px;
+  }
+
+}

@@ -19,13 +19,13 @@ const Home: React.FC = () => {
                 <Banner />
                 <OurStory />
                 <OurStory2 />
-                {/* <ChannelSolution /> */}
-                {/* <EmployeeSolution /> */}
-                {/* <RewardSolution /> */}
-                {/* <CaseStudies /> */}
-                {/* <OurClients /> */}
-                {/* <ContactUs /> */}
-                {/* <Footer /> */}
+                <ChannelSolution />
+                <EmployeeSolution />
+                <RewardSolution />
+                <CaseStudies />
+                <OurClients />
+                <ContactUs />
+                <Footer />
             </div>
         </>
     )
