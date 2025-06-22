@@ -2,6 +2,8 @@ import React from 'react'
 
 import './Banner.css'
 
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+
 // @ts-ignore
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -45,9 +47,22 @@ const Banner: React.FC = () => {
                         clickable: true,
                         dynamicBullets: true,
                     }}
-                    navigation={true}
+
+                    navigation={{
+                        nextEl: ".custom-next",
+                        prevEl: ".custom-prev",
+                    }}
+                    // navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className={"mySwiper custom-swiper-banner"}>
+                    className={"mySwiper custom-swiper-banner relative"}>
+
+                    <div className="custom-prev absolute left-2 lg:left-3 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white  w-10 lg:w-12 h-10 lg:h-12 rounded-full flex items-center justify-center backdrop-blur-sm cursor-pointer">
+                        <FaChevronLeft className="text-lg lg:text-2xl" />
+                    </div>
+                    <div className="custom-next absolute right-2 lg:right-3 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white w-10 lg:w-12 h-10 lg:h-12 rounded-full flex items-center justify-center backdrop-blur-sm cursor-pointer">
+                        <FaChevronRight className="text-lg lg:text-2xl" />
+                    </div>
+
                     {
                         swiperData.map((data, index) => {
                             return (
@@ -58,11 +73,11 @@ const Banner: React.FC = () => {
                                             src={data.banner}
                                             alt="Banner"
                                         />
-                                        <div className="absolute inset-0 flex flex-col justify-center items-start px-12 space-y-4">
-                                            <h1 className="text-white text-3xl md:text-4xl font-bold fade-down bg-neutral-100/10 px-4 py-2 rounded-md w-fit">
+                                        <div className="absolute inset-0 flex flex-col justify-center text-center items-center lg:items-start px-12 space-y-4">
+                                            <h1 className="text-white lg:ms-10 text-4xl lg:text-3xl font-bold fade-down bg-neutral-100/10 px-4 py-1 lg:py-2 rounded-md">
                                                 {data.para1}
                                             </h1>
-                                            <h3 className="text-white text-base md:text-lg fade-up bg-neutral-100/10 px-4 py-2 rounded-md w-fit">
+                                            <h3 className="text-white lg:ms-10 md:text-lg fade-up bg-neutral-100/10 px-4 py-1 lg:py-2 rounded-md">
                                                 {data.para2}
                                             </h3>
                                         </div>

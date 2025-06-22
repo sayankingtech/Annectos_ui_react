@@ -21,12 +21,12 @@ const Nav: React.FC = () => {
 
     return (
         <>
-            <div className='md:flex hidden w-[100%] h-[74px] justify-center fixed z-2 bg-white items-center shadow-[0_1px_20px_rgba(0,0,0,0.25'>
+            <div className='lg:flex hidden w-[100%] h-[74px] justify-center fixed z-2 bg-white items-center shadow-[0_1px_20px_rgba(0,0,0,0.25'>
                 <div className='w-[18%] border m-5'>
                     <img src={logo1} alt="" />
                 </div>
 
-                <div className='hidden md:block'>
+                <div className='hidden lg:block'>
                     <ul className='nav flex gap-6 my-2'>
                         {
                             navItem.map((data) => {
