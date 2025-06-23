@@ -1,8 +1,13 @@
 import React from 'react'
 import './Founder.css'
 
-import image1 from '../../assets/Founders & Advisors/sarvani.jpg'
-import image2 from '../../assets/Founders & Advisors/lalit.png'
+import { IoLogoTwitter } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
+import image1 from '../../../assets/Founders & Advisors/sarvani.jpg'
+import image2 from '../../../assets/Founders & Advisors/lalit.png'
 
 const Founders: React.FC = () => {
 
@@ -28,24 +33,30 @@ const Founders: React.FC = () => {
             <div className='founders text-xl'>
                 <h1 className=''>FOUNDERS</h1>
             </div>
-            <div className='grid lg:grid-cols-2 border'>
+            <div className='grid lg:grid-cols-2 gap-4 lg:gap-10'>
                 {
                     founder.map((data) => {
                         return (
-                            <div className='grid grid-cols-6 border'>
-                                <div className='border col-span-2 lg:col-span-1 p-1'>
-                                    <img src={data.image} alt="" className='h-[110px] w-[100px] rounded-[50%] border' />
+                            <div className='grid grid-cols-6 mb-5 lg:mb-8 p-2 gap-2 shadow-[0_1px_20px_rgba(0,0,0,0.18)] rounded-[6px] founder-card'>
+                                <div className='col-span-2 lg:col-span-2 mx-auto my-2'>
+                                    <img src={data.image} alt="" className='h-[110px] w-[90px] lg:h-[140px] lg:w-[130px] rounded-[50%]' />
                                 </div>
-                                <div className='border col-span-4 lg:col-span-5 p-2'>
-                                    <h2 className='text-2xl font-bold mb-2'>{data.name}</h2>
-                                    <h4 className='text-1xl font-bold mb-2'>{data.designation}</h4>
+                                <div className='founder_details col-span-4 lg:col-span-4'>
+                                    <h2 className='text-2xl font-bold mb-2  text-[#37517e]'>{data.name}</h2>
+                                    <h4 className='text-1xl font-bold'>{data.designation}</h4>
                                     {
                                         data.description?.map((d) => {
                                             return (
-                                                <p className='text-[12px] lg:text-[15px] mb-2'>{d}</p>
+                                                <p className='text-[12px] lg:text-[15px] ms-0 m-4'>{d}</p>
                                             )
                                         })
                                     }
+                                    <div className='flex gap-1'>
+                                        <span className='p-1 flex items-center justify-center h-[25px] w-[25px] text-[#37517e] bg-stone-200 rounded-[50%] text-xs hover:bg-blue-500 hover:text-white transition-colors duration-300 cursor-pointer'><IoLogoTwitter/></span>
+                                        <span className='p-1 flex items-center justify-center h-[25px] w-[25px] text-[#37517e] bg-stone-200 rounded-[50%] text-xs hover:bg-blue-500 hover:text-white transition-colors duration-300 cursor-pointer'><FaFacebookF/></span>
+                                        <span className='p-1 flex items-center justify-center h-[25px] w-[25px] text-[#37517e] bg-stone-200 rounded-[50%] text-xs hover:bg-blue-500 hover:text-white transition-colors duration-300 cursor-pointer'><FaInstagram/></span>
+                                        <span className='p-1 flex items-center justify-center h-[25px] w-[25px] text-[#37517e] bg-stone-200 rounded-[50%] text-xs hover:bg-blue-500 hover:text-white transition-colors duration-300 cursor-pointer'><FaLinkedinIn/></span>
+                                    </div>
                                 </div>
                             </div>
                         )

@@ -37,14 +37,14 @@ const CaseStudies: React.FC = () => {
         { image: image5, para: "Bespoke Premium Partner Engagement Electronic consumer durables | Electricals Segment" },
         { image: image6, para: "Retailer/Electrician Connect and Engagement Program Electrical Goods | Electricals Segment" },
         { image: image7, para: "Channel Partner Outreach and Loyalty Program Electronic consumer durables | Electricals Segment" },
-        { image: image8, para: "Hover over this text to see the image overlay." },
-        { image: image9, para: "Hover over this text to see the image overlay." },
-        { image: image10, para: "Hover over this text to see the image overlay." },
-        { image: image11, para: "Hover over this text to see the image overlay." },
-        { image: image12, para: "Hover over this text to see the image overlay." },
-        { image: image13, para: "Hover over this text to see the image overlay." },
-        { image: image14, para: "Hover over this text to see the image overlay." },
-        { image: image15, para: "Hover over this text to see the image overlay." }
+        { image: image8, para: "Partner Engagement Piston Manufacturer | Automotive Segment" },
+        { image: image9, para: "Painters Connect and Engagement Program | Paints Manufacturer" },
+        { image: image10, para: "Painters Re- activation and Enrollment Program | Paints Manufacturer" },
+        { image: image11, para: "Influencer Engagement Agricultural Machinery OEM | Agricultural machinery & equipments" },
+        { image: image12, para: "Tiered Channel Engagement Structure Overhaul Fertilizer Manufacturer | Agricultural machinery & equipments" },
+        { image: image13, para: "Partner Engagement Lubricant Manufacturer | Automotive Segment" },
+        { image: image14, para: "Partner Engagement OEM Manufacturer | Automotive Segment" },
+        { image: image15, para: "End-to-End Redemption and Reward Delivery Management | FMCG Products" }
     ];
     return (
         <>
@@ -85,7 +85,7 @@ const CaseStudies: React.FC = () => {
                     }}
                     modules={[Keyboard, Autoplay, Pagination]}
                     className={"mySwiper custom-swiper"}>
-                    {   
+                    {
                         swiperData.map((data, index) => {
                             return (
                                 <SwiperSlide key={index} className=''>
@@ -98,7 +98,7 @@ const CaseStudies: React.FC = () => {
                                         <img
                                             src={data.image}
                                             alt="Overlay Image"
-                                            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 z-0 transition-opacity duration-300"/>
+                                            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 z-0 transition-opacity duration-300" />
                                     </div>
                                 </SwiperSlide>
                             )

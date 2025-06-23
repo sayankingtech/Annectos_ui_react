@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './Nav.css'
 
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { FaBars } from "react-icons/fa6";
+// import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 
 import logo1 from "../../assets/logo (1).png"
@@ -49,7 +50,7 @@ const Nav: React.FC = () => {
             <div className='lg:hidden flex justify-between items-center px-4 h-[74px] fixed top-0 left-0 right-0 bg-white shadow-md z-10'>
                 <img src={logo1} alt="logo" className="h-[40px] object-contain" />
                 <button onClick={() => setSidebarOpen(true)}>
-                    <BsThreeDotsVertical size={24} />
+                    <FaBars size={24} />
                 </button>
             </div>
 

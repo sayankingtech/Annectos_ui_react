@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-black text-white px-4 py-4 fixed bottom-0 w-full">
+    <div className="bg-black text-white px-4 py-4">
       <div className="grid gap-4 grid-cols-1 md:grid-cols-[auto_auto_1px_auto] md:items-center">
         {/* Left: Copyright */}
         <div className="text-center lg:text-center md:text-left text-sm">

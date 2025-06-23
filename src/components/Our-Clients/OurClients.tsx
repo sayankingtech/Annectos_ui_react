@@ -6,6 +6,12 @@ import logo2 from '../../assets/clients/BOSCH_PT_logo.png'
 import logo3 from '../../assets/clients/Blaupunkt.png'
 import logo4 from '../../assets/clients/Bosch_logo.png'
 import logo5 from '../../assets/clients/Cargill_logo.png'
+import logo6 from '../../assets/clients/EY_logo_slogan.png'
+import logo7 from '../../assets/clients/FUCHS.png'
+import logo8 from '../../assets/clients/GRASSLogo.png'
+import logo9 from '../../assets/clients/Mahindra.png'
+import logo10 from '../../assets/clients/Marico_Logo.svg.png'
+import logo11 from '../../assets/clients/Mphasis_hp_company.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -26,7 +32,13 @@ const OurClients: React.FC = () => {
         { image: logo2 },
         { image: logo3 },
         { image: logo4 },
-        { image: logo5 }
+        { image: logo5 },
+        { image: logo6 },
+        { image: logo7 },
+        { image: logo8 },
+        { image: logo9 },
+        { image: logo10 },
+        { image: logo11 },
     ];
     return (
         <div className='mt-5 pt-1 h-[380px] ourClient bg-gradient-to-t from-[#1E5077] via-amber-50 to-[#1E5077]'>
