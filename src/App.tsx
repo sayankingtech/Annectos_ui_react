@@ -1,11 +1,10 @@
 import React from 'react'
-import Home from './pages/Home'
+import { RouterProvider } from 'react-router-dom'
+import routers from './Router/Index'
 
 const App: React.FC = () => {
   return (
-    <>
-      <Home />
-    </>
+    <RouterProvider router={routers} />
   )
 }
 

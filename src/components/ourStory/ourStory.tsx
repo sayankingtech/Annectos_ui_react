@@ -2,6 +2,7 @@ import React from 'react'
 import './ourStory.css'
 import { BiCheckDouble } from "react-icons/bi";
 import aboutImg from '../../assets/about.jpg'
+import { NavLink } from 'react-router-dom';
 
 const OurStory: React.FC = () => {
   return (
@@ -62,7 +63,9 @@ const OurStory: React.FC = () => {
               <img src={aboutImg} alt="" />
             </div>
             <div className='our-st-btn mt-3 md:mt-4 lg:mt-6 text-center w-full'>
-              <button className='border w-[220px] lg:w-[240px] h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
+              <NavLink to='/founder'>
+                <button className='border w-[220px] lg:w-[240px] h-[35px] text-[11px] rounded-3xl font-bold'>Meet Founders and Advisors</button>
+              </NavLink>
             </div>
           </div>
         </div>

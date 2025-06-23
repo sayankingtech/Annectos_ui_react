@@ -89,7 +89,7 @@ const CaseStudies: React.FC = () => {
                         swiperData.map((data, index) => {
                             return (
                                 <SwiperSlide key={index} className=''>
-                                    <div className="relative mb-15 group mt-5 h-[220px] lg:h-[290px] w-[320px] md:w-[570px] lg:w-[590px] mx-auto shadow-[0_1px_10px_rgba(0,0,0,0.15)]">
+                                    <div className="relative mb-15 group mt-5 h-[220px] lg:h-[290px] w-[320px] md:w-[570px] lg:w-[540px] mx-auto shadow-[0_1px_8px_rgba(0,0,0,0.15)]">
                                         <div className="absolute m-2 inset-0 flex items-center justify-center z-10 transition-colors duration-300 group-hover:text-amber-50">
                                             <p className="text-md lg:text-2xl text-center font-bold">
                                                 {data.para}
