@@ -1,15 +1,16 @@
 import React from 'react'
 import Nav from '../components/Nav/Nav'
 import Footer from '../components/Footer/Footer'
+import ChallengePartner from '../components/Challenge-Partner/ChallengePartner'
 
-const ChallengePartner:React.FC = () => {
+const ChallengePartnerPage: React.FC = () => {
   return (
     <>
-    <Nav/>
-    <ChallengePartner/>
-    <Footer/>
+      <Nav />
+      <ChallengePartner />
+      <Footer />
     </>
   )
 }
 
-export default ChallengePartner
+export default ChallengePartnerPage

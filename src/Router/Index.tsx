@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Founder from "../pages/Founder";
-import ChallengePartner from "../pages/ChallengePartner";
+import ChallengePartnerPage from "../pages/ChallengePartner";
+import ChannelMarketingSolution from "../pages/ChannelMarketingSolution";
 
 const routers = createBrowserRouter([
     {
@@ -14,7 +15,11 @@ const routers = createBrowserRouter([
     },
     {
         path:"/challenge-partner",
-        element: <ChallengePartner/>
+        element: <ChallengePartnerPage/>
+    },
+    {
+        path:"/challenge-marketing-solution",
+        element: <ChannelMarketingSolution/>
     }
 ])
 
