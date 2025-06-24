@@ -4,6 +4,7 @@ import './RewardSolution.css'
 import LoyalityRewards from '../../assets/icon/Loyalty Rewards.png'
 
 import ReadMoreBtn from '../Read_more_Btn/ReadMoreBtn'
+import { NavLink } from 'react-router-dom'
 
 const RewardSolution: React.FC = () => {
     return (
@@ -20,7 +21,9 @@ const RewardSolution: React.FC = () => {
                             We make a strong last impression! annectoś ensures that you have access to an exhaustive, customised, loyalty rewards gallery.
                         </p>
                         <a className='lg:text-[15px]' href="#">Creative Swag.in</a>
-                        <ReadMoreBtn />
+                        <NavLink to="/reward-fullfill-solution">
+                            <ReadMoreBtn />
+                        </NavLink>
                     </div>
                 </div>
             </div>

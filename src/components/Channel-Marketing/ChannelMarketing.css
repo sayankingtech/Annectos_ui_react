@@ -1,0 +1,128 @@
+.influence_eng h1 {
+    position: relative;
+}
+
+.influence_eng h1::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.dormant_partner h1 {
+    position: relative;
+}
+
+.dormant_partner h1::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.channel_fit h1 {
+    position: relative;
+}
+
+.channel_fit h1::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.sales_visib h1 {
+    position: relative;
+}
+
+.sales_visib h1::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.retail_activate h1 {
+    position: relative;
+}
+
+.retail_activate h1::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 130px;
+    height: 1px;
+    background-color: #000000;
+}
+
+
+@media (min-width:768px) {
+    .influence_eng h1::after {
+        top: 15px;
+        left: 260px;
+        width: 110px
+    }
+
+    .dormant_partner h1::after {
+        top: 35px;
+        left: 0;
+    }
+
+    .channel_fit h1::after {
+        top: 15px;
+        left: 300px;
+        width: 70px;
+    }
+
+    .sales_visib h1::after {
+        top: 15px;
+        left: 160px;
+    }
+
+    .retail_activate h1::after {
+        top: 15px;
+        left: 310px;
+        width: 60px;
+    }
+
+}
+
+@media (min-width:1080px) {
+    .influence_eng h1::after {
+        left: 260px;
+    }
+
+    .dormant_partner h1::after {
+        top: 15px;
+        left: 340px;
+        width: 130px;
+    }
+    
+    .channel_fit h1::after {
+        left: 300px;
+        width: 130px;
+    }
+
+    .sales_visib h1::after {
+        left: 160px;
+    }
+
+    .retail_activate h1::after {
+        left: 310px;
+        width: 130px;
+    }
+
+}

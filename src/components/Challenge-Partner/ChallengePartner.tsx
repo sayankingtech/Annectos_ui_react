@@ -6,7 +6,7 @@ const ChallengePartner: React.FC = () => {
     <div className='bg-[#f6f9fd]'>
       <div className='lg:w-[75%] mx-auto p-6'>
         <div className='challenge-partner text-2xl lg:text-3xl font-bold justify-center'>
-        <h1 className=''>CHANNEL PARTNER ENGAGEMENT</h1>
+        <h1 className='tracking-[1px]'>CHANNEL PARTNER ENGAGEMENT</h1>
       </div>
         <div className='bg-[#fff] text-[18px] p-4 mt-12 lg:mt-20 fade-up'>
           <h3 className='text-blue-500 mb-4'>Channel Program Strategy & Design</h3>

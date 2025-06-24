@@ -1,7 +1,5 @@
 .challenge-partner {
     display: flex;
-    gap: 1.5rem;
-    margin: 0.5rem 0;
     margin-bottom: 20px;
     list-style: none;
 }
@@ -22,16 +20,9 @@
 
 @media (min-width: 768px) {
     .challenge-partner h1::after {
-        top: 40px;
-        left: 140px;
+        top: 50px;
+        left: 35%;
         width: 120px
     }
 }
 
-@media (min-width: 1080px) {
-    .challenge-partner h1::after {
-        top: 50px;
-        left: 180px;
-        width: 80px;
-    }
-}

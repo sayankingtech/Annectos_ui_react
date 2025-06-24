@@ -1,15 +1,9 @@
 .advisors {
-  display: flex;
-  gap: 1.5rem;
-  margin: 0.5rem 0;
   margin-bottom: 20px;
-  list-style: none;
 }
 
 .advisors h1 {
   position: relative;
-  /* cursor: pointer; */
-  /* padding-bottom: 4px; */
 }
 
 .advisors h1::after {
@@ -31,8 +25,6 @@
   opacity: 0.95;
 }
 
-
-
 .advisors_details {
   gap: 1.5rem;
   margin: 0.5rem 0;
@@ -49,22 +41,9 @@
   position: absolute;
   top: 28px;
   left: 0px;
-  width: 350px;
+  width: 150px;
   height: 1px;
   background-color: #000000;
-}
-
-
-@keyframes fadeInForward {
-  0% {
-    opacity: 0;
-    transform: translateY(50px) scale(0.70);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 .advisor-card {
@@ -72,13 +51,13 @@
 }
 
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   .advisors_details h4::after {
-    width: 150px
+    width: 250px
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .advisors_details h4::after {
     width: 300px
   }
