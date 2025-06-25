@@ -1,0 +1,51 @@
+.reward_fullfill {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.reward_fullfill h1 {
+    position: relative;
+}
+
+.reward_fullfill h1::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 150px;
+    height: 2px;
+    background-color: #000000;
+}
+
+
+
+.loyality_rwd h1 {
+    position: relative;
+}
+
+.loyality_rwd h1::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 160px;
+    width: 107px;
+    height: 1px;
+    background-color: #000000;
+}
+
+
+
+
+
+@media (min-width:768px) {
+    .reward_fullfill h1::after {
+        top: 40px;
+        left: 35%;
+    }
+}
+
+@media (min-width:1080px) {
+    .reward_fullfill h1::after {
+        top: 50px;        
+    }
+}
