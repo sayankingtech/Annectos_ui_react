@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './EmployeeEngagement.css'
 
 import image1 from '../../assets/features/features-1.png'
 import image2 from '../../assets/features/features-2.png'
 
 const EmployeeEngagement: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className='w-[85%] mx-auto pt-5 mb-5'>
             <div className='emplyee_engage text-2xl lg:text-3xl font-bold justify-center'>

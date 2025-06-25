@@ -22,7 +22,7 @@ const OurStory: React.FC = () => {
               </div>
               <p className='mb-2 lg:me-4 text-justify text-[15px]'>
                 Founded in 2012, annectoś specialises in ideating, designing, and deploying <strong>channel marketing strategies</strong> spanning the spectrum of business to trade (B2T) activities. With key focus on ROI, our customised and specialised operations include trade marketing, retailer enrolment and network expansion through <NavLink
-                  to='/challenge-partner' className="text-blue-700 hover:text-blue-900 transition">
+                  to='/challenge-partner' viewTransition={true} className="text-blue-700 hover:text-blue-900 transition">
                   channel and influencer engagement
                 </NavLink>. Our good Karma is to guarantee last-mile brand profitability for you channel-intensive product. Making your channel partners’ businesses profitable and rewarding is our mission.
               </p>

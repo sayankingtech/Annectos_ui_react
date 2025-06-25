@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Founder.css'
 
 import { IoLogoTwitter } from "react-icons/io";
@@ -10,7 +10,10 @@ import image1 from '../../../assets/Founders & Advisors/sarvani.jpg'
 import image2 from '../../../assets/Founders & Advisors/lalit.png'
 
 const Founders: React.FC = () => {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+      
     const founder = [
         {
             image: image1, name: 'Sharvani Sachidanand',
