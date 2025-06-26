@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './PrivacyPolicyCom.css';
 
 import { BsQuestionCircle } from "react-icons/bs";
@@ -176,6 +176,9 @@ const policyData = [
 ];
 
 const PrivacyPolicyCom: React.FC = () => {
+  useEffect(() => {
+          window.scrollTo(0, 0)
+        }, [])
   return (
     <div className="w-[85%] mx-auto pt-5 mb-10 lg:mb-20">
       <div className="career">

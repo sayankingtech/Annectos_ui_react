@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './CareerCom.css'
 
 import image1 from '../../assets/team/team-1.jpg'
 import image2 from '../../assets/team/tele-caller1.jpg'
 
 const CareerCom: React.FC = () => {
+    useEffect(() => {
+            window.scrollTo(0, 0)
+          }, [])
     return (
         <div className="w-[85%] mx-auto pt-5 mb-10 lg:mb-20">
             <div className="career">
