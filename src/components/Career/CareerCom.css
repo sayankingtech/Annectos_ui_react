@@ -1,0 +1,38 @@
+.career {
+    margin-bottom: 40px;
+}
+
+.career h1 {
+    position: relative;
+}
+
+.career h1::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 90px;
+    width: 90px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.career-card {
+  animation: fadeInForward 1s ease-out forwards;
+}
+
+
+@media (min-width:768px) {
+    .career h1::after {
+        top: 13px;
+        left: 80px;
+        width: 150px;
+    }
+}
+
+@media (min-width:1080px) {
+    .career h1::after {
+        left: 80px;
+    }
+}
+
+

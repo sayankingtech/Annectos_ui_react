@@ -29,8 +29,26 @@ const Footer: React.FC = () => {
               }> Newsletter
             </NavLink>
           </li>
-          <li className="cursor-pointer ">Career</li>
-          <li className="cursor-pointer hover:text-blue-400">Privacy policy</li>
+          <li>
+            <NavLink
+              to="/career"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600"
+                  : "cursor-pointer hover:text-blue-400"
+              }> Career
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/privacy-policy"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600"
+                  : "cursor-pointer hover:text-blue-400"
+              }> Privacy policy
+            </NavLink>
+          </li>
         </ul>
 
         {/* Divider */}

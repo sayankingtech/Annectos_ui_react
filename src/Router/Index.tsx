@@ -6,6 +6,8 @@ import ChannelMarketingSolution from "../pages/ChannelMarketingSolution";
 import EmployeeEngagementSolution from "../pages/EmployeeEngagementSolution";
 import RewardFullfillSolution from "../pages/RewardFullfillSolution";
 import Newsletter from "../pages/Newsletter";
+import Career from "../pages/Career";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 const routers = createBrowserRouter([
     {
@@ -34,7 +36,15 @@ const routers = createBrowserRouter([
     },
     {
         path: "/newsletter",
-        element: <Newsletter/>
+        element: <Newsletter />
+    },
+    {
+        path: "/career",
+        element: <Career />
+    },
+    {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />
     }
 ])
 

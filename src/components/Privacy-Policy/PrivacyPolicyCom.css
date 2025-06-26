@@ -1,0 +1,21 @@
+.career {
+  margin-bottom: 20px;
+}
+
+.career h1 {
+  position: relative;
+}
+
+.career h1::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 170px;
+  width: 150px;
+  height: 1px;
+  background-color: #000000;
+}
+
+
+
+

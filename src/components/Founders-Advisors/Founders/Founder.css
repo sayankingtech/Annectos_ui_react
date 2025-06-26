@@ -52,7 +52,7 @@
 @keyframes fadeInForward {
   0% {
     opacity: 0;
-    transform: translateY(50px) scale(0.70);
+    transform: translateY(50px) scale(0.50);
   }
 
   100% {
@@ -62,7 +62,7 @@
 }
 
 .founder-card {
-  animation: fadeInForward 0.6s ease-out forwards;
+  animation: fadeInForward 1s ease-out forwards;
 }
 
 
