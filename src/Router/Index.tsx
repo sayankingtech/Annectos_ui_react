@@ -5,6 +5,7 @@ import ChallengePartnerPage from "../pages/ChallengePartner";
 import ChannelMarketingSolution from "../pages/ChannelMarketingSolution";
 import EmployeeEngagementSolution from "../pages/EmployeeEngagementSolution";
 import RewardFullfillSolution from "../pages/RewardFullfillSolution";
+import Newsletter from "../pages/Newsletter";
 
 const routers = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const routers = createBrowserRouter([
     {
         path: "/reward-fullfill-solution",
         element: <RewardFullfillSolution />
+    },
+    {
+        path: "/newsletter",
+        element: <Newsletter/>
     }
 ])
 

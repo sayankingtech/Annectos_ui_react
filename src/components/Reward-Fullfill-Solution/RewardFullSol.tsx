@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './RewardFullSol.css'
 
 import image1 from '../../assets/features/features-1.png'
 
-const RewardFullSol:React.FC = () => {
-  return (
-     <div className='w-[85%] mx-auto pt-5 mb-5'>
+const RewardFullSol: React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    return (
+        <div className='w-[85%] mx-auto pt-5 mb-5'>
             <div className='reward_fullfill text-2xl lg:text-3xl font-bold justify-center'>
                 <h1 className='tracking-[1px]'>REWARDS FULFILMENT SOLUTION</h1>
             </div>
@@ -20,7 +23,7 @@ const RewardFullSol:React.FC = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default RewardFullSol

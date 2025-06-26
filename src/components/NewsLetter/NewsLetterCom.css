@@ -1,0 +1,25 @@
+.news_letter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.news_letter h1 {
+    position: relative;
+}
+
+.news_letter h1::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 230px;
+    width: 150px;
+    height: 2px;
+    background-color: #474343;
+}
+
+@media (min-width:320px) {
+    .news_letter h1::after {
+        left: 210px;
+        width: 100px;
+    }
+}

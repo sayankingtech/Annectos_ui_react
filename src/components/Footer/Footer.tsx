@@ -5,6 +5,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -18,8 +19,17 @@ const Footer: React.FC = () => {
         {/* Navigation Links */}
         <ul className="flex flex-wrap justify-center md:justify-center lg:justify-end gap-4 text-sm">
           <li className="cursor-pointer hover:text-blue-400">Home</li>
-          <li className="cursor-pointer hover:text-blue-400">Newsletter</li>
-          <li className="cursor-pointer hover:text-blue-400">Career</li>
+          <li>
+            <NavLink
+              to="/newsletter"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600"
+                  : "cursor-pointer hover:text-blue-400"
+              }> Newsletter
+            </NavLink>
+          </li>
+          <li className="cursor-pointer ">Career</li>
           <li className="cursor-pointer hover:text-blue-400">Privacy policy</li>
         </ul>
 
