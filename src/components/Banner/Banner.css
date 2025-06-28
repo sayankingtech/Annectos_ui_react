@@ -23,11 +23,11 @@
 }
 
 .fade-down {
-  animation: fadeDown 1s ease-out forwards;
+  animation: fadeDown 1.5s ease-out forwards;
 }
 
 .fade-up {
-  animation: fadeUp 0.8s ease-out forwards;
+  animation: fadeUp 1.5s ease-out forwards;
 }
 
 

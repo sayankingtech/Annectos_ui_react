@@ -1,5 +1,6 @@
 import React from 'react'
-import './ourStory.css'
+import './OurStory.css'
+
 import { BiCheckDouble } from "react-icons/bi";
 import aboutImg from '../../assets/about.jpg'
 import { NavLink } from 'react-router-dom';
@@ -7,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 const OurStory: React.FC = () => {
   return (
     <>
-      <div className='w-[85%] mx-auto pt-2'>
+      <div className='w-[85%] mx-auto pt-2 scroll-mt-[70px]' id='our-story'>
         <div className='ourStory text-xl'>
           <h1 className=''>OUR STORY</h1>
         </div>

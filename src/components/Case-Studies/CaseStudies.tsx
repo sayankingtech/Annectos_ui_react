@@ -48,7 +48,7 @@ const CaseStudies: React.FC = () => {
     ];
     return (
         <>
-            <div className='w-[85%] mx-auto pt-6'>
+            <div className='w-[85%] mx-auto pt-6 scroll-mt-[60px]' id='case-studies'>
                 <div className='case-St text-xl'>
                     <h1 className=''>CASE STUDIES</h1>
                 </div>

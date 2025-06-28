@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom'
 const RewardSolution: React.FC = () => {
     return (
         <>
-            <div className='w-[85%] mx-auto pt-6'>
+            <div className='w-[85%] mx-auto pt-6 scroll-mt-[60px]' id='reward-solution'>
                 <div className='reward-sl text-xl'>
                     <h1 className=''>REWARDS FULFILMENT SOLUTIONS</h1>
                 </div>

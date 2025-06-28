@@ -9,15 +9,16 @@ import logo1 from "../../assets/logo (1).png"
 
 const Nav: React.FC = () => {
     const navItem = [
-        { navItems: 'Home' },
-        { navItems: 'About Us' },
-        { navItems: 'Channel Engagement' },
-        { navItems: 'Employee Engagement' },
-        { navItems: 'Rewards Fulfilment' },
-        { navItems: 'Case Studies' },
-        { navItems: 'Clints' },
-        { navItems: 'Contact Us' }
+        { navItems: 'Home', link: '#banner'},
+        { navItems: 'Our Story', link: '#our-story' },
+        { navItems: 'Channel Engagement', link: '#channel-solution' },
+        { navItems: 'Employee Engagement', link: '#employee-solution' },
+        { navItems: 'Rewards Fulfilment', link: '#reward-solution' },
+        { navItems: 'Case Studies', link: '#case-studies' },
+        { navItems: 'Clints', link: '#our-cliets' },
+        { navItems: 'Contact Us', link: '#contact-us' }
     ]
+
     const [location, setLocation] = useState('home')
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
@@ -38,7 +39,7 @@ const Nav: React.FC = () => {
                                     className={location === data.navItems ? `active` : ''}
                                     onClick={() => setLocation(data.navItems)}
                                 >
-                                    <a href="#home">{data.navItems}</a>
+                                    <a href={data.link}>{data.navItems}</a>
                                 </li>
                             ))
                         }
@@ -73,7 +74,7 @@ const Nav: React.FC = () => {
                                     setSidebarOpen(false)
                                 }}
                             >
-                                <a href="#home">{data.navItems}</a>
+                                <a href={data.link}>{data.navItems}</a>
                             </li>
                         ))
                     }

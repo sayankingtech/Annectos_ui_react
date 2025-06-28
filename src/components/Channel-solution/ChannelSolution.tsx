@@ -15,7 +15,7 @@ import imageIcon5 from '../../assets/icon/Sales Visibility.png'
 const ChannelSolution: React.FC = () => {
     return (
         <>
-            <div className='w-[85%] mx-auto pt-2'>
+            <div className='w-[85%] mx-auto pt-2 scroll-mt-[70px]' id='channel-solution'>
                 <div className='channel_SL text-xl'>
                     <h1 className=''>CHANNEL ENGAGEMENT SOLUTIONS</h1>
                 </div>

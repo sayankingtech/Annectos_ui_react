@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import './Banner.css'
 
@@ -32,7 +32,7 @@ const Banner: React.FC = () => {
     ]
     return (
         <>
-            <div className=''>
+            <div className='' id='banner'>
                 <Swiper
                     loop={true}
                     onSlideChange={() => {
@@ -65,6 +65,9 @@ const Banner: React.FC = () => {
 
                     {
                         swiperData.map((data, index) => {
+                            useEffect(() => {
+                                window.scrollTo(0, 0)
+                            }, [])
                             return (
                                 <SwiperSlide key={index}>
                                     <div className="relative h-[700px] lg:h-[600px]">

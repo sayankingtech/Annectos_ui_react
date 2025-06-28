@@ -8,7 +8,7 @@ import { CiMobile2 } from "react-icons/ci";
 const ContactUs: React.FC = () => {
     return (
         <>
-            <div className='w-[85%] mx-auto pt-2'>
+            <div className='w-[85%] mx-auto pt-2 scroll-mt-[70px]' id='contact-us'>
                 <div className='contact_US text-xl'>
                     <h1 className=''>CONTACT US</h1>
                 </div>

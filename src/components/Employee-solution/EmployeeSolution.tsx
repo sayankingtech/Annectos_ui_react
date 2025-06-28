@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 const EmployeeSolution: React.FC = () => {
     return (
         <>
-            <div className='w-[85%] mx-auto pt-6 lg:pt-2'>
+            <div className='w-[85%] mx-auto pt-6 lg:pt-2 scroll-mt-[60px]' id='employee-solution'>
                 <div className='employee_SL text-xl'>
                     <h1 className=''>EMPLOYEE ENGAGEMENT SOLUTIONS</h1>
                 </div>

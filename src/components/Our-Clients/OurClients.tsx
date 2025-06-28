@@ -41,7 +41,7 @@ const OurClients: React.FC = () => {
         { image: logo11 },
     ];
     return (
-        <div className='mt-5 pt-1 h-[380px] ourClient bg-gradient-to-t from-[#1E5077] via-amber-50 to-[#1E5077]'>
+        <div className='mt-5 pt-1 h-[380px] ourClient bg-gradient-to-t from-[#1E5077] via-amber-50 to-[#1E5077] scroll-mt-[60px]' id='our-cliets'>
             <div className='w-[85%] mx-auto pt-6 font-semibold text-amber-50'>
                 <div className='our-Cl text-xl'>
                     <h1 className=''>OUR CLIENTS</h1>

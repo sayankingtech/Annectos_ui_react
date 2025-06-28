@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './ChallengePartner.css'
 
 const ChallengePartner: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
   return (
-    <div className='bg-[#f6f9fd] fade-up'>
+    <div className='bg-[#f6f9fd] fade-up scroll-mt-[30px]'>
       <div className='lg:w-[75%] mx-auto p-6'>
         <div className='challenge-partner text-2xl lg:text-3xl font-bold justify-center'>
           <h1 className='tracking-[1px]'>CHANNEL PARTNER ENGAGEMENT</h1>
