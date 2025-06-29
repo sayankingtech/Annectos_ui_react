@@ -3,3 +3,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* .fade-down {
+  animation: fadeDown 2s ease-out forwards;
+} */
+
+.fade-up {
+  animation: fadeUp 2s ease-out forwards;
+}

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ChallengePartner.css'
 
 const ChallengePartner: React.FC = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+ useEffect(() => {
+  window.scrollTo({
+    top: 0
+  });
+}, []);
   return (
     <div className='bg-[#f6f9fd] fade-up scroll-mt-[30px]'>
       <div className='lg:w-[75%] mx-auto p-6'>

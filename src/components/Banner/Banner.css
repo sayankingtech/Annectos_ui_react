@@ -22,12 +22,12 @@
   }
 }
 
-.fade-down {
-  animation: fadeDown 1.5s ease-out forwards;
+.fade-down-banner {
+  animation: fadeDown 0.8s ease-out forwards;
 }
 
-.fade-up {
-  animation: fadeUp 1.5s ease-out forwards;
+.fade-up-banner {
+  animation: fadeUp 0.9s ease-out forwards;
 }
 
 
