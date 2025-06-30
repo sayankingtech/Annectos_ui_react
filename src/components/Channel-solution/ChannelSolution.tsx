@@ -1,7 +1,7 @@
 import React from 'react'
 import './channelSolution.css'
 
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 import ReadMoreBtn from '../Read_more_Btn/ReadMoreBtn'
 
@@ -13,6 +13,10 @@ import imageIcon5 from '../../assets/icon/Sales Visibility.png'
 
 
 const ChannelSolution: React.FC = () => {
+    const navigate = useNavigate();
+    const handleReadMore = (targetSection: any) => {
+        navigate(`/challenge-marketing-solution#${targetSection}`);
+    }
     return (
         <>
             <div className='w-[85%] mx-auto pt-2 scroll-mt-[70px]' id='channel-solution'>
@@ -38,25 +42,25 @@ const ChannelSolution: React.FC = () => {
                         <img className='h-[60px] w-[60px] mx-auto mt-5' src={imageIcon2} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Influencer Engagement</h3>
                         <p className='text-sm mt-5 tracking-wide'>Influencers are decision takers who rule the roost in the B2B world de facto. They don’t buy; but they surely decide or influence</p>
-                        <ReadMoreBtn targetSection="influence-eng"/>
+                        <ReadMoreBtn handleReadMore={handleReadMore} targetSection="influence-eng" />
                     </div>
                     <div className='channel-SL-2 text-center p-3 bg-amber-50'>
                         <img className='h-[60px] w-[60px] mx-auto mt-5' src={imageIcon3} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Dormant Partner re-activation</h3>
                         <p className='text-sm mt-5 tracking-wide'>Whither went your loyal partner? What made him to stop engaging with your brand? What went amiss? You wonder? No worries.</p>
-                        <ReadMoreBtn targetSection="dormant-partner"/>
+                        <ReadMoreBtn handleReadMore={handleReadMore} targetSection="dormant-partner" />
                     </div>
                     <div className='channel-SL-2 text-center p-3 bg-amber-50'>
                         <img className='h-[60px] w-[60px] mx-auto mt-5' src={imageIcon4} alt="" />
                         <h3 className='text-lg mt-5 font-medium'>Soft Engagement</h3>
                         <p className='text-sm mt-5 tracking-wide'>Connecting with the retailer/dealer/influencer at a transactional level is only a part of what annectos does. We employ a ‘Ghar-ki-Baat’ relationship with</p>
-                        <ReadMoreBtn targetSection="channel-fit"/>
+                        <ReadMoreBtn handleReadMore={handleReadMore} targetSection="channel-fit" />
                     </div>
                     <div className='channel-SL-2 text-center p-3 bg-amber-50'>
                         <img className='h-[60px] w-[60px] mx-auto mt-5' src={imageIcon5} alt="" />
                         <h3 className='text-lg mt-5 font-medium'>Sales Visibility</h3>
                         <p className='text-sm mt-5 tracking-wide'>The Devil is in the detail!! The key to the success of a trade scheme is processing ∕ slicing ∕ dicing ∕ analysing gargantuan amounts of data that</p>
-                        <ReadMoreBtn targetSection="sales-visib"/>
+                        <ReadMoreBtn handleReadMore={handleReadMore} targetSection="sales-visib" />
                     </div>
                 </div>
             </div>

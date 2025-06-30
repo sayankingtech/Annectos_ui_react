@@ -5,9 +5,14 @@ import programManagement from '../../assets/icon/Program Management Employee Eng
 import employeeRewards from '../../assets/icon/EMployee Rewards.png'
 
 import ReadMoreBtn from '../Read_more_Btn/ReadMoreBtn'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const EmployeeSolution: React.FC = () => {
+    const navigate = useNavigate();
+    const handleReadMore = (targetSection: any) => {
+        navigate(`/employee-marketing-solution#${targetSection}`);
+    }
+
     return (
         <>
             <div className='w-[85%] mx-auto pt-6 lg:pt-2 scroll-mt-[70px]' id='employee-solution'>
@@ -32,9 +37,7 @@ const EmployeeSolution: React.FC = () => {
                         <img className='h-[60px] w-[60px] mx-auto' src={employeeRewards} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Employee Rewards</h3>
                         <p className='text-[14px] mt-5 text-justify'>Rewarding good performance is mission critical. But gifting a stellar employee something she does not want, or use, is pointless. Thoughtfulness is key to making a performer feel special. If you truly care for your employees,</p>
-                        <NavLink to="/employee-marketing-solution">
-                            <ReadMoreBtn />
-                        </NavLink>
+                        <ReadMoreBtn handleReadMore={handleReadMore} targetSection="emplyo-rwd" />
                     </div>
                 </div>
             </div>
