@@ -8,6 +8,7 @@ import RewardFullfillSolution from "../pages/RewardFullfillSolution";
 import Newsletter from "../pages/Newsletter";
 import Career from "../pages/Career";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import OurClients from "../pages/OurClients";
 
 const routers = createBrowserRouter([
     {
@@ -45,6 +46,10 @@ const routers = createBrowserRouter([
     {
         path: "/privacy-policy",
         element: <PrivacyPolicy />
+    },
+    {
+        path: "/our-clients",
+        element: <OurClients />
     }
 ])
 

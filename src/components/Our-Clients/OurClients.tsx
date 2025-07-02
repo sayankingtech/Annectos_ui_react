@@ -25,6 +25,7 @@ import 'swiper/css/navigation';
 import { Pagination } from 'swiper/modules';
 
 import { Keyboard, Autoplay } from 'swiper/modules';
+import { NavLink } from 'react-router-dom'
 
 const OurClients: React.FC = () => {
     const swiperData = [
@@ -82,11 +83,11 @@ const OurClients: React.FC = () => {
                             return (
                                 <>
                                     <SwiperSlide key={index} className=''>
-                                        <div className="flex justify-around items-center mt-10 h-[100px]">
+                                        <div className="flex justify-around items-center mt-10 h-[90px]">
                                             <img
                                                 src={data.image}
                                                 alt="Overlay Image"
-                                                className="w-[200px]" />
+                                                className="w-[100px] lg:w-[200px]" />
                                         </div>
                                     </SwiperSlide>
                                 </>
@@ -98,7 +99,11 @@ const OurClients: React.FC = () => {
                     <h5>Disclaimer: All logos are the property of their respective owners.</h5>
                 </div>
                 <div className='flex justify-center'>
-                    <button className='p-2 lg:p-3 mt-5 tracking-wide bg-white rounded-[5px] text-black w-[150px] cursor-pointer transition-colors duration-400 hover:bg-blue-400 hover:text-white'>Learn More</button>
+                    <NavLink to="/our-clients">
+                        <button className='p-2 lg:p-3 mt-5 tracking-wide bg-white rounded-[5px] text-black w-[150px] cursor-pointer transition-colors duration-400 hover:bg-blue-400 hover:text-white'>
+                            Learn More
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </div>
