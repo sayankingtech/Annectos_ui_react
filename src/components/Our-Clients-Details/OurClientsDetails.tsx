@@ -81,16 +81,16 @@ const OurClientsDetails: React.FC = () => {
   return (
     <div className="w-[85%] mx-auto pt-6 lg:pt-2 pb-10">
       <div className="clients_page text-xl text-center mb-6">
-        <h1 className="font-bold text-3xl lg:text-4xl">CLIENTS</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl">CLIENTS</h1>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 place-items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 place-items-center">
         {clientLogos.map((logo, index) => (
           <div key={index} className="w-full flex justify-center">
             <img
               src={logo}
               alt={`Client ${index + 1}`}
-              className="max-h-20 object-contain transition-transform duration-300 hover:scale-105"
+              className="max-h-25 object-contain transition-transform duration-300 hover:scale-105"
             />
           </div>
         ))}

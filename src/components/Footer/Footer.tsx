@@ -56,10 +56,41 @@ const Footer: React.FC = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start gap-3 text-md">
-          <span className="cursor-pointer hover:text-blue-400"><IoLogoTwitter /></span>
-          <span className="cursor-pointer hover:text-blue-400"><FaFacebookF /></span>
-          <span className="cursor-pointer hover:text-blue-400"><FaInstagram /></span>
-          <span className="cursor-pointer hover:text-blue-400"><FaLinkedinIn /></span>
+          <a
+            href="https://twitter.com/annectos?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:text-blue-400"
+          >
+            <IoLogoTwitter />
+          </a>
+
+          <a
+            href="https://www.facebook.com/annectosindia"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:text-blue-400"
+          >
+            <FaFacebookF />
+          </a>
+
+          <a
+            href="https://www.instagram.com/annectos_loyalty_solutions/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:text-blue-400"
+          >
+            <FaInstagram />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEk28TH14wM0AAAAX3x_GIIVJaIM9NZYNRNphznzMq3oOcD97SlSPz2YzKqLEHZOIvZLHX-0Jd3j95ByFC5zPye77OS8_7P9fiwTCdVLBpwBWKal6NUgbrCL9U5-mCKfQFVxog=&originalReferer=http://annectosworld.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fannecto-rewards-%26-retail-pvt-ltd-%2F%3FviewAsMember%3Dtrue"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:text-blue-400"
+          >
+            <FaLinkedinIn />
+          </a>
         </div>
       </div>
     </div>

@@ -8,8 +8,10 @@ import CaseStudies from '../components/Case-Studies/CaseStudies'
 import OurClients from '../components/Our-Clients/OurClients'
 import ContactUs from '../components/Contact-us/ContactUs'
 import Footer from '../components/Footer/Footer'
-import OurStory from '../components/OurStory/OurStory'
 import OurStory2 from '../components/OurStory2/OurStory2'
+import OurStory from '../components/OurStory/OurStory'
+import FloatingButton from '../components/Floating-Button/FloatingButton'
+
 
 const Home: React.FC = () => {
     return (
@@ -26,6 +28,7 @@ const Home: React.FC = () => {
                 <OurClients />
                 <ContactUs />
                 <Footer />
+                <FloatingButton/>
             </div>
         </>
     )
