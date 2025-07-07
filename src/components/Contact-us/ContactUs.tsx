@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ContactUs.css'
+
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { SlLocationPin } from "react-icons/sl";
 import { BsEnvelope } from "react-icons/bs";
 import { CiMobile2 } from "react-icons/ci";
 
 const ContactUs: React.FC = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 600,
+          once: false,
+          mirror: true
+        });
+      }, []);
+
     return (
         <>
             <div className='w-[85%] mx-auto pt-2 scroll-mt-[70px]' id='contact-us'>
@@ -13,13 +26,13 @@ const ContactUs: React.FC = () => {
                     <h1 className=''>CONTACT US</h1>
                 </div>
             </div>
-            <div className='grid lg:grid-cols-2 m-3'>
-                <div style={{ width: '100%', height: '350px' }}>
+            <div className='grid lg:grid-cols-2 m-3' data-aos="fade-up">
+                <div style={{ width: '100%', height: '350px'}}>
                     <iframe
                         title="Google Map"
                         src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.784412468845!2d77.57386641413537!3d12.985636418085257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1615d2f02bbd%3A0x420626ecc5705f13!2sannectos%20Rewards%20%26%20Retail%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1639822193909!5m2!1sen!2sin'}
                         width="100%"
-                        height="100%"
+                        height="114%"
                         style={{ border: 0 }}
                         allowFullScreen
                         loading="lazy"
@@ -51,7 +64,7 @@ const ContactUs: React.FC = () => {
                         <textarea className='fixed-textarea mt-3 lg:mt-4 focus:outline-sky-500 text-[16px]' name="" id="" placeholder='Message'></textarea>
                     </div>
                     <div className='send_msg_btn ms-3 flex justify-center'>
-                        <button className='rounded-[15px] w-[200px] p-1 mt-2 text-md'>Send Message</button>
+                        <button className='rounded-[15px] w-[160px] p-1 mt-2 text-md'>Send Message</button>
                     </div>
                 </div>
             </div >

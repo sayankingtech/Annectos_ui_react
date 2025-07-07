@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './RewardSolution.css'
+
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import LoyalityRewards from '../../assets/icon/Loyalty Rewards.png'
 
@@ -7,6 +11,15 @@ import ReadMoreBtn from '../Read_more_Btn/ReadMoreBtn'
 import { NavLink } from 'react-router-dom'
 
 const RewardSolution: React.FC = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 600,
+          once: false,
+          mirror: true
+        });
+      }, []);
+
     return (
         <>
             <div className='w-[85%] mx-auto pt-6 scroll-mt-[60px]' id='reward-solution'>
@@ -14,7 +27,7 @@ const RewardSolution: React.FC = () => {
                     <h1 className=''>REWARDS FULFILMENT SOLUTIONS</h1>
                 </div>
                 <div className='grid grid-cols-1 pt-6 mx-auto'>
-                    <div className='employee_SL_2 channel-SL-2 text-center p-4 bg-amber-50'>
+                    <div className='employee_SL_2 channel-SL-2 text-center p-4 bg-amber-50' data-aos="zoom-in" data-aos-duration="800">
                         <img className='h-[60px] w-[60px] mt-4 mx-auto' src={LoyalityRewards} alt="" />
                         <h3 className='text-[17px] mt-5 font-medium'>Loyalty Rewards</h3>
                         <p className='text-[14px] mt-5 lg:ms-15 lg:me-15'>Be it for employees or channel partners, loyalty rewards are crucial. Prompt delivery of rewards is the proof of the pudding. <br />

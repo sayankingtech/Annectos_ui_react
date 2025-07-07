@@ -19,7 +19,6 @@
   width: 0;
   height: 2px;
   background-color: #2563eb;
-  /* Tailwind's blue-600 */
   transition: all 0.3s ease-out;
 }
 
@@ -44,20 +43,3 @@
   height: 2px;
   background-color: #2563eb;
 }
-
-
-/* @keyframes fadeRight {
-  0% {
-    opacity: 0;
-    transform: translateX(60px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.fade-right {
-  animation: fadeRight 1s ease-out forwards;
-  opacity: 0;
-} */

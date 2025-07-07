@@ -9,8 +9,8 @@ import OurClients from '../components/Our-Clients/OurClients'
 import ContactUs from '../components/Contact-us/ContactUs'
 import Footer from '../components/Footer/Footer'
 import FloatingButton from '../components/Floating-Button/FloatingButton'
-import OurStory2 from '../components/OurStory2/OurStory2'
-import OurStory from '../components/OurStory/OurStory'
+import OurStory from '../components/ourStory/OurStory'
+import OurStory2 from '../components/ourStory2/OurStory2'
 
 
 const Home: React.FC = () => {

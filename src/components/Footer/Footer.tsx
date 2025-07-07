@@ -18,7 +18,16 @@ const Footer: React.FC = () => {
 
         {/* Navigation Links */}
         <ul className="flex flex-wrap justify-center md:justify-center lg:justify-end gap-4 text-sm">
-          <li className="cursor-pointer hover:text-blue-400">Home</li>
+          <li>
+            <NavLink
+              to="/#banner"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-600"
+                  : "cursor-pointer hover:text-blue-400"
+              }> Home
+            </NavLink>
+          </li>
           <li>
             <NavLink
               to="/newsletter"

@@ -16,14 +16,14 @@
   background-color: #000000;
 }
 
-.advisor-card {
+/* .advisor-card {
   transition: all 1s ease-in-out;
 }
 
 .advisor-card:hover {
   transform: translateY(-8px);
   opacity: 0.95;
-}
+} */
 
 .advisors_details {
   gap: 1.5rem;

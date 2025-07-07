@@ -23,13 +23,14 @@
 }
 
 .fade-down-banner {
-  animation: fadeDown 0.8s ease-out forwards;
+  animation: fadeDown 0.6s ease-out forwards;
 }
 
 .fade-up-banner {
-  animation: fadeUp 0.9s ease-out forwards;
+  opacity: 0; /* Hide initially */
+  animation: fadeUp 1.5s ease-out forwards;
+  animation-delay: 0.4s;
 }
-
 
 .custom-swiper-banner .swiper-pagination-bullet {
   height: 12px;

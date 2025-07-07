@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ourStory2.css'
+
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { LuBookImage } from "react-icons/lu";
@@ -7,9 +11,18 @@ import { BsPeopleFill } from "react-icons/bs";
 import { CiFaceSmile } from "react-icons/ci";
 
 const OurStory2: React.FC = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 600,
+          once: false,
+          mirror: true
+        });
+      }, []);
+
     return (
         <>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 w-[85%] mx-auto gap-6 mt-10 mb-10'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 w-[85%] mx-auto gap-6 mt-10 mb-10' data-aos="fade-up">
                 <div className=' p-6 shadow-[0_1px_20px_rgba(0,0,0,0.25)]'>
                     <div className='flex items-center'>
                         <span className='text-3xl'><TfiHeadphoneAlt /></span>

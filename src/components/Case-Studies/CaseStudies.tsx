@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './CaseStudies.css'
+
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import image1 from '../../assets/tesimonials/1.png'
 import image2 from '../../assets/tesimonials/2.png'
@@ -46,6 +50,15 @@ const CaseStudies: React.FC = () => {
         { image: image14, para: "Partner Engagement OEM Manufacturer | Automotive Segment" },
         { image: image15, para: "End-to-End Redemption and Reward Delivery Management | FMCG Products" }
     ];
+
+    useEffect(() => {
+        AOS.init({
+          duration: 600,
+          once: false,
+          mirror: true
+        });
+      }, []);
+
     return (
         <>
             <div className='w-[85%] mx-auto pt-6 scroll-mt-[60px]' id='case-studies'>
@@ -84,7 +97,7 @@ const CaseStudies: React.FC = () => {
                         clickable: true,
                     }}
                     modules={[Keyboard, Autoplay, Pagination]}
-                    className={"mySwiper custom-swiper"}>
+                    className={"mySwiper custom-swiper"} data-aos="fade-up">
                     {
                         swiperData.map((data, index) => {
                             return (

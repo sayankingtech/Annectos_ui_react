@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './OurClients.css'
+
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import logo1 from '../../assets/clients/70a1fae2910cfb5aefcd041c2eba2c66.w640.h453-removebg.png'
 import logo2 from '../../assets/clients/BOSCH_PT_logo.png'
@@ -41,6 +45,15 @@ const OurClients: React.FC = () => {
         { image: logo10 },
         { image: logo11 },
     ];
+
+    useEffect(() => {
+        AOS.init({
+          duration: 600,
+          once: false,
+          mirror: true
+        });
+      }, []);
+
     return (
         <div className='mt-5 pt-1 h-[380px] ourClient bg-gradient-to-t from-[#1E5077] via-amber-50 to-[#1E5077] scroll-mt-[60px]' id='our-cliets'>
             <div className='w-[85%] mx-auto pt-6 font-semibold text-amber-50'>
@@ -77,7 +90,7 @@ const OurClients: React.FC = () => {
                         }
                     }}
                     modules={[Keyboard, Autoplay]}
-                    className="mySwiper offerBanner">
+                    className="mySwiper offerBanner" data-aos="fade-up">
                     {
                         swiperData.map((data, index) => {
                             return (
@@ -100,7 +113,7 @@ const OurClients: React.FC = () => {
                 </div>
                 <div className='flex justify-center'>
                     <NavLink to="/our-clients">
-                        <button className='p-2 lg:p-3 mt-5 tracking-wide bg-white rounded-[5px] text-black w-[150px] cursor-pointer transition-colors duration-400 hover:bg-blue-400 hover:text-white'>
+                        <button className='p-2 lg:p-3 mt-5 tracking-wide bg-white rounded-[5px] text-black w-[150px] cursor-pointer transition-colors duration-400 hover:bg-[#97aabd] hover:text-white'>
                             Learn More
                         </button>
                     </NavLink>

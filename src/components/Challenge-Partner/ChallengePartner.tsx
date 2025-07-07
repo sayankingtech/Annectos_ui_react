@@ -7,18 +7,20 @@ import 'aos/dist/aos.css'
 
 const ChallengePartner: React.FC = () => {
 
-      useEffect(() => {
-          AOS.init({
-              duration: 600,
-              once: false,
-              mirror: true   
-          });
-      }, []);
- useEffect(() => {
-  window.scrollTo({
-    top: 0
-  });
-}, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: false,
+      mirror: true
+    });
+  }, []);
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0
+    });
+  }, []);
+
   return (
     <div className='bg-[#f6f9fd] fade-up scroll-mt-[30px]'>
       <div className='lg:w-[75%] mx-auto p-6'>

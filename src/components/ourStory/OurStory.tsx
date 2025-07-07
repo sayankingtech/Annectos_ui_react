@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './OurStory.css';
+
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { BiCheckDouble } from 'react-icons/bi';
 import { IoClose } from 'react-icons/io5';
@@ -10,6 +14,14 @@ import { NavLink } from 'react-router-dom';
 const OurStory: React.FC = () => {
   const [showVideo, setShowVideo] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: false,
+      mirror: true
+    });
+  }, []);
+
   return (
     <>
       <div className='w-[85%] mx-auto pt-2 scroll-mt-[70px]' id='our-story'>
@@ -17,7 +29,7 @@ const OurStory: React.FC = () => {
           <h1>OUR STORY</h1>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2'>
-          <div>
+          <div data-aos="fade-up">
             <div className='flex items-end text-lg font-bold'>
               <span><BiCheckDouble size={30} /></span>
               OUR JOURNEY
@@ -58,8 +70,8 @@ const OurStory: React.FC = () => {
           </div>
 
           <div className='lg:p-5 relative'>
-            <div className="relative w-full">
-              <img src={aboutImg} alt="about" className="w-full h-auto rounded-xl" />
+            <div className="relative w-full" data-aos="zoom-in" data-aos-duration="1000">
+              <img src={aboutImg} alt="about" className="w-full h-auto" />
 
               {/* Play Button Centered Inside Image */}
               <button
@@ -86,7 +98,7 @@ const OurStory: React.FC = () => {
 
             <div className='our-st-btn mt-3 md:mt-4 lg:mt-6 text-center w-full'>
               <NavLink to='/founder'>
-                <button className='border w-[220px] lg:w-[240px] h-[35px] text-[11px] rounded-3xl font-bold'>
+                <button className='border w-[220px] lg:w-[240px] h-[35px] text-[11px] rounded-3xl font-bold cursor-pointer duration-600'>
                   Meet Founders and Advisors
                 </button>
               </NavLink>

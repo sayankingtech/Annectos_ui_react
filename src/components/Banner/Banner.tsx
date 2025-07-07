@@ -77,10 +77,10 @@ const Banner: React.FC = () => {
                                             alt="Banner"
                                         />
                                         <div className="absolute inset-0 flex flex-col lg:ms-10 text-white justify-center text-center items-center lg:items-start px-12 space-y-4">
-                                            <h1 className="text-4xl lg:text-3xl font-bold fade-down-banner bg-neutral-100/10 px-4 py-1 lg:py-2 rounded-md">
+                                            <h1 className="text-4xl font-bold fade-down-banner bg-neutral-100/10 px-4 py-1 lg:py-2 rounded-md">
                                                 {data.para1}
                                             </h1>
-                                            <h3 className="md:text-lg fade-up-banner bg-neutral-100/10 px-4 py-1 lg:py-2 rounded-md">
+                                            <h3 className="md:text-2xl fade-up-banner bg-neutral-100/10 px-4 py-1 lg:py-2 rounded-md">
                                                 {data.para2}
                                             </h3>
                                         </div>

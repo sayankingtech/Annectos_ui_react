@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import './PrivacyPolicyCom.css';
 
+// @ts-ignore
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import { BsQuestionCircle } from "react-icons/bs";
 
 const policyData = [
@@ -158,7 +162,7 @@ const policyData = [
   {
     introLine: "Grievance Officer",
     description: [
-      "In accordance with Information Technology Act 2000 and rules made there under, the contact details of the Grievances are provided below:","#11, Railway Parallel Road, Nehru Nagar, Bengaluru, Karnataka 560020","Phone: +91– 9686202046","Email: support@annectos.in","If you have any questions about this Policy or other privacy concerns, you can also email us at support@annectos.in"
+      "In accordance with Information Technology Act 2000 and rules made there under, the contact details of the Grievances are provided below:", "#11, Railway Parallel Road, Nehru Nagar, Bengaluru, Karnataka 560020", "Phone: +91– 9686202046", "Email: support@annectos.in", "If you have any questions about this Policy or other privacy concerns, you can also email us at support@annectos.in"
     ]
   },
   {
@@ -177,8 +181,17 @@ const policyData = [
 
 const PrivacyPolicyCom: React.FC = () => {
   useEffect(() => {
-          window.scrollTo(0, 0)
-        }, [])
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: false,
+      mirror: true
+    });
+  }, []);
+
   return (
     <div className="w-[85%] mx-auto pt-5 mb-10 lg:mb-20">
       <div className="career">
@@ -190,7 +203,7 @@ const PrivacyPolicyCom: React.FC = () => {
         return (
           (
             <>
-              <div key={index} className="grid md:grid-cols-3 w-[95%] mx-auto gap-6 mt-10 text-[#444444]">
+              <div key={index} className="grid md:grid-cols-3 w-[95%] mx-auto gap-6 mt-10 text-[#444444]" data-aos="fade-up">
 
                 {/* Left Side - Intro Line */}
                 <div className="flex col-span-1 items-start gap-2">
@@ -207,7 +220,7 @@ const PrivacyPolicyCom: React.FC = () => {
                   })}
                 </div>
               </div>
-              <div className='w-[95%] mx-auto h-[1px] bg-[#444444] mt-10 border-b'></div>
+              <div className='w-[95%] mx-auto h-[1px] bg-[#444444] mt-10 border-b' data-aos="fade-up"></div>
             </>
           )
         )

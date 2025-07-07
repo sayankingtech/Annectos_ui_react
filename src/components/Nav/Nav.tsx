@@ -25,13 +25,13 @@ const Nav: React.FC = () => {
     return (
         <>
             {/* Desktop Navbar */}
-            <div className='lg:flex hidden w-full h-[74px] justify-center fixed z-10 bg-white items-center shadow-[0_1px_20px_rgba(0,0,0,0.25)]'>
-                <div className='w-[18%] px-4'>
-                    <img src={logo1} alt="logo" className="h-[50px] object-contain" />
+            <div className='lg:flex hidden w-full h-[70px] justify-center fixed z-10 bg-white items-center shadow-[0_1px_20px_rgba(0,0,0,0.25)]'>
+                <div className='w-[18%] justify-end flex ms-4 me-1'>
+                    <img src={logo1} alt="logo" className="h-[40px] object-contain" />
                 </div>
 
                 <div className='hidden lg:block'>
-                    <ul className='nav flex gap-6 my-2'>
+                    <ul className='nav flex ps-2 pt-1'>
                         {
                             navItem.map((data) => (
                                 <li
@@ -82,7 +82,7 @@ const Nav: React.FC = () => {
             </div>
 
             {/* Spacer */}
-            <div className='h-[74px]'></div>
+            <div className='h-[70px]'></div>
         </>
     )
 
